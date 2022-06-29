@@ -1,0 +1,26 @@
+{
+  "name": "PokeMate",
+  "description": "Need some company? Click the Pokeball!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/out.png",
+      "32": "/images/out.png",
+      "48": "/images/out.png",
+      "128": "/images/out.png"
+    }
+  },
+  "icons": {
+      "16": "/images/out.png",
+      "32": "/images/out.png",
+      "48": "/images/out.png",
+      "128": "/images/out.png"
+  },
+  "options_page": "options.html"
+}

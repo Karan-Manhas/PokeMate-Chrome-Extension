@@ -1,7 +1,9 @@
 # PokeMate-Chrome-Extension
 
 **Description**
-This Application listens for a button click so when the user clicks the chrome extension, a pokemon comes out!
+This Application listens for a button click so when the user clicks the chrome extension, a digital assistant comes out!
+**Purpose**
+Inspired from the The Pragmatic Programmer Book. More info on Rubber Duck debugging here ->  https://www.freecodecamp.org/news/rubber-duck-debugging/ 
 
 **Technologies Used**
 HTML, Javascript were used in this project

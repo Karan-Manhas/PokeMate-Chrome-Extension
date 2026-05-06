@@ -1,20 +1,95 @@
-# PokeMate-Chrome-Extension
+# PokeMate Chrome Extension
 
-**Description**
-This Application listens for a button click so when the user clicks the chrome extension, a digital assistant comes out!
-**Purpose**
-Inspired from the The Pragmatic Programmer Book. More info on Rubber Duck debugging here ->  https://www.freecodecamp.org/news/rubber-duck-debugging/ 
+A lightweight Chrome extension that opens a small Pokémon-inspired companion from the browser toolbar. The original idea was based on the concept of **rubber duck debugging**: having a small visual companion nearby while thinking through code, problems, or tasks.
 
-**Technologies Used**
-HTML, Javascript were used in this project
+> This is an early Chrome Extension project. It is intentionally simple and is best treated as a small UI/prototype project rather than a production browser extension.
 
-**How to install this chrome extension to my browser ?**
-1. Download all the code
-2. Extract all to a seperate folder
-3. Navigate to the Extensions Menu and this can be done by typing in 'chrome://extensions/' into the address bar.
-4. Click _Load unpacked_ button on the top left.
-5. Navigate to the _PokeMate-Chrome-Extension_ folder and select this
-6. Once done, click _Update_ next to the _Pack Extension_ button
-7. Click the <img width="28" alt="image" src="https://user-images.githubusercontent.com/94873627/176554165-7878d8b2-d70d-4b92-be05-4131a62107d3.png"> and_ Manage Extensions_
-8. Pin the _PokeMate_ to your Extensions Bar
-9. Click the Pokeball and BOOM, your PokeMate will appear! (Bragging points to the person who knows the Pokemon :) )
+## Overview
+
+PokeMate adds a toolbar button to Chrome. When the extension icon is clicked, a popup appears with a Pokémon-themed animated companion.
+
+The project demonstrates the basic structure of a Chrome Extension using Manifest V3, including:
+
+- Extension manifest configuration
+- Browser action popup
+- Background service worker
+- Static image/icon assets
+- Options page scaffold
+
+## Why I Built This
+
+This project was inspired by the idea of **rubber duck debugging**, where explaining a problem out loud can help clarify thinking and reveal solutions. PokeMate turns that idea into a playful browser extension: a small companion that can sit in the browser and act as a light-hearted debugging buddy.
+
+## Features
+
+- Chrome toolbar extension icon
+- Popup-based companion UI
+- Pokémon-themed visual design
+- Manifest V3 configuration
+- Basic background service worker setup
+- Options page scaffold for future customisation
+
+## Tech Stack
+
+- HTML
+- JavaScript
+- Chrome Extensions API
+- Manifest V3
+
+## Project Structure
+
+```text
+PokeMate-Chrome-Extension/
+├── background.js        # Background service worker
+├── manifest.json        # Chrome extension configuration
+├── options.html         # Options page scaffold
+├── popup.html           # Extension popup UI
+├── images/              # Extension icons and image assets
+└── README.md
+```
+
+## Installation
+
+To run the extension locally:
+
+1. Download or clone this repository.
+2. Open Google Chrome.
+3. Navigate to:
+
+```text
+chrome://extensions/
+```
+
+4. Enable **Developer mode** in the top-right corner.
+5. Click **Load unpacked**.
+6. Select the project folder.
+7. Pin the extension to your browser toolbar.
+8. Click the Pokéball icon to open PokeMate.
+
+## Current Limitations
+
+This is an older prototype and currently has a few limitations:
+
+- The extension is static and does not yet include interactive assistant behaviour.
+- The options page is only scaffolded and does not currently persist user settings.
+- Some referenced files may need to be added or cleaned up if the project is revived, such as popup/options scripts and styling.
+- The popup currently uses an externally hosted animated image; for a more reliable extension, this should be replaced with a local asset.
+
+## Potential Improvements
+
+Possible future improvements include:
+
+- Add multiple selectable companions
+- Store user preferences with `chrome.storage`
+- Replace external image links with local extension assets
+- Add simple animations or interaction states
+- Add keyboard shortcuts
+- Improve popup styling
+- Add tests or linting for extension structure
+- Package for Chrome Web Store distribution
+
+## Status
+
+Prototype / archived learning project.
+
+This repository is mainly useful as evidence of early experimentation with browser extensions and lightweight UI tooling
